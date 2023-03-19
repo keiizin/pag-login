@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    background-image: url(https://images.hdqwalls.com/download/dark-minimalist-blur-4k-4o-1920x1080.jpg);
+    background-size: auto;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 20px;
+    max-width: 400px;
+    margin: auto auto auto;
+    padding-top: 30px;
+    display: flex;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    width: 300px;
+}
+.menu.ativado {
+    height: 450px;
+}
+
+.menu.ativado .login {
+    transition: none;
+    transform: translatex(-300px);
+}
+.menu.ativado .registro {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.menu .login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.login {
+    display: block;
+}
+.menu .registro {
+    display: block;
+    position: absolute;
+    transform: translateX(300px);
+    transition: none;
+}
+.registre, .entre {
+    color: #162948 solid;
+}
+
+
+
+.fade {
+    transform: scale(1);
+    display: flex;
+
+}
+
+h1 {
+    font-size: larger;
+    text-align: center;
+    margin-left: 5%;
+}
+.menu h1, p {
+    text-align: center;
+}
+
+.menu a {
+    color: #162948;
+}
+.ter, .cook {
+    margin: 5px;
+}
+
+.ter a {
+    color: black;
+}
+.cook a {
+    color: black;
+}
+.ter a:hover {
+    color: rgb(220, 221, 219);
+}
+.cook a:hover {
+    color: rgb(220, 221, 219);
+}
+
+.menu a:hover {
+    color: rgb(220, 221, 219);
+    cursor: pointer;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+   transform: translateY(-70%);
+    transition: .5s;
+    font-size: 14px;
+
+}
+.text.em {
+    top: 55%;
+    transform: translateY(-60%);
+}
+
+.text.in {
+    top: 45%;
+}
+.text.on {
+    top: 45%;
+    transform: translateY(-30%);
+}
+
+
+.caixa-texto input:focus~label,
+.caixa-texto input:valid~label {
+    top: 5px
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: -13%;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.email, .senha, .username{
+    border-color: rgb(235, 235, 235);
+    margin-left: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.644);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    height: 30px;
+    width: 90%;
+    background-color: transparent;
+}
+.caixa-texto {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 0px 0;
+}
+
+
+.email, .senha, .username::after {
+    position: relative;
+
+}
+
+.email {
+    margin-top: 5px;
+
+} 
+    
+.senha {
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+}
+.lembrar {
+    margin-left: 20px;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+.check {
+    font-size: 13px;
+}
+
+
+.google, .facebook, .redit {
+    width: 60px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    border-color: rgb(134, 133, 133);
+    border-radius: 4px;
+    border: 2px solid rgba(0,0,0,0.05);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 30px;
+    background-position: 50%;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 30px;
+    transition: 0.3s ease-in-out;
+}
+.google:hover, .facebook:hover, .redit:hover{
+    transform: scale(1.2)
+}
+
+
+
+.redit {
+   /*  margin-left: 30px; */
+    background-image: url(https://www.iconpacks.net/icons/2/free-reddit-logo-icon-2436-thumb.png);
+    background-color: orangered;
+    transition: .5s;
+    
+}
+
+
+.facebook {
+   /*  margin-left: 35px; */
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png);
+    background-color: rgb(24, 119, 242);
+    transition: .5s;
+}
+
+.google {
+   /*  margin-left: 55px; */
+    background-image: url(https://cdn-icons-png.flaticon.com/512/2991/2991148.png);
+    background-color: #ececec;
+    transition: .5s;
+}
+.entre {
+    margin-top: -15px;
+    border-bottom: #162948 ;
+}
+.sim {
+    margin-left: 5%;
+}
+
+.linha {
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+.entrar {
+    margin-left: 50px; 
+    background: transparent; 
+    border-radius: 5px;
+    border-color: rgba(134, 134, 134, 0.63);
+    width: 50px;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #162948;
+    box-shadow: none;
+    border: 2px solid rgba(0, 0, 0, 0.322);
+    cursor: pointer;
+    font-weight: 500px;
+}
+.entrar {
+     width: 55%;
+     height: 30px;
+     margin-left: 26%;
+     margin-top: 8px;
+     transition: .5s;
+}
+.embaixo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+.enter a button:hover {
+    background: #162948;
+    color: #fff;
+}
+
+
+.menu button:hover {
+    background-color: rgb(255, 255, 255);
+}
+.menu button:active {
+    background-color: rgb(220, 221, 219);
+}
+input{
+    border-color: rgba(131, 136, 138, 0.986);
+    background-color: white;
+    margin: 0;
+    border-style: inherit;
+    outline: none;
+    
+    
+}
+/* input:hover {
+    border-color: rgb(134, 133, 133);
+} */
+.registre:active {
+    color: rgb(14, 119, 242);
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: transparent;
+}
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.navi a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+} 
+.navi a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0); /* tornar "invisivel" */
+    transition: .5s;
+}
+.navi a:hover::after {
+    transform: scaleX(1);
+}
+
+.navi button {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500px;
+    margin-left: 40px;
+    color: #fff;
+    transition: .5s;
+}
+.navi button:hover {
+    background: #fff;
+    color: #162948;
+}

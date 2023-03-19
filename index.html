@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <div class="Header">
+    <header>
+        <ion-icon class="logo" name="code-slash-outline"></ion-icon>
+        <nav class="navi">
+            <a href="#">Home</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+            <button class="Login">Login</button>
+        </nav>
+    </header>
+    </div>
+    <div class="menu">
+        <form method="post" action="/Site/index1.html">
+        <div class="login">
+        <h1>Iniciar Sessão</h1> 
+           <section>
+           <div class="caixa-texto">
+           <input id="Email1" required type="text" required class="email">
+           <div class="icon">
+            <ion-icon name="mail-outline"></ion-icon>
+        </div>
+           <label for="Email1" class="text em">Email</label>
+            </div> 
+            <div class="caixa-texto">
+           <input id="Senha1" required type="password" required class="senha">
+           <div class="icon" style="top: -2px;">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+           <label for="Senha1" class="text on">Senha</label>   
+            </div>
+            </section>
+            <div>
+            <label for="lembrar" class="check" for="checkbox">
+                <input id="lembrar" class="lembrar" type="checkbox"> Lembrar de mim
+            </label>
+            </div>
+            <div class="enter">
+            <a href="/Site/index1.html"><button type="submit" class="butao entrar">Entrar</button></a>
+            </div>
+            <p class="sim">Não tem conta?
+                <a class="registre" target="_blank"> Se registre!</a></p>
+           <hr class="linha">
+           <p class="Entre">Entre utilizando:</p>
+        <a href="https://www.google.com/" target="_blank"><button type="button" class="google"></button></a> 
+        <a href="https://www.facebook.com/" target="_blank"><button type="button" class="facebook"></button></a>
+        <a href="https://www.reddit.com/" target="_blank"><button type="button" class="redit"></button></a>
+        </p>
+    </form>
+        </div>
+        <div class="registro">
+            <form method="post" action="./Site/index1.html">
+            <h1>Registro</h1> 
+               <section>
+               <div class="caixa-texto">
+                <input id="Username" required type="text" required class="username">
+            <div class="icon" style="top: -15px;">
+                <ion-icon name="person-outline"></ion-icon>
+            </div>
+               <label for="Username" class="text in">Username</label>
+                </div>
+                <div class="caixa-texto">
+               <input id="email2" required type="text" required class="email">
+            <div class="icon">
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+               <label for="email2" class="text em">Email</label>
+                </div> 
+                <div class="caixa-texto">
+               <input id="senha2" required type="password" required class="senha">
+            <div class="icon" style="top: -2px;">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+               <label for="senha2" class="text on">Senha</label>   
+                </div>
+                </section>
+                <div>
+                <label for="termos" class="check" for="checkbox">
+                    <input id="termos" class="lembrar" type="checkbox"> Eu concordo com os <a href="">termos de uso</a>
+                </label>
+                </div>
+                <div class="enter">
+                <a href="/Site/index1.html"><button type="submit" class="butao entrar">Registrar</button></a>
+                </div>
+                <p class="sim">Já possuí conta?
+                    <a class="entre" target="_blank">Entre!</a></p>
+               <hr class="linha">
+               <p class="Entre">Entre utilizando:</p>
+            <a href="https://www.google.com/" target="_blank"><button type="button" class="google"></button></a> 
+            <a href="https://www.facebook.com/" target="_blank"><button type="button" class="facebook"></button></a>
+            <a href="https://www.reddit.com/" target="_blank"><button type="button" class="redit"></button></a>
+            </p>
+        </form>
+            </div>
+
+    </div>
+    <div class="embaixo">
+    <p class="ter"><a href="">Termos de uso</a></p><p class="cook"><a href="">Privacidade e cookies</a></p>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
